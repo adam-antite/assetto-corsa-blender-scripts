@@ -17,7 +17,7 @@ threshold = 0.00001
 for o in context.selected_objects:
     if o.type == 'MESH':
         total_meshes += 1
-	total_vertices += len(o.data.vertices)
+        total_vertices += len(o.data.vertices)
 
 
 print("Total meshes: " + str(total_meshes))
@@ -28,9 +28,9 @@ print("Total vertex count: " + str(total_vertices) + "\n")
 for o in context.selected_objects:
     if o.type == 'MESH':
         current_mesh += 1
-	current_vertices_start = len(o.data.vertices)
+        current_vertices_start = len(o.data.vertices)
         print("Mesh Number: " + str(current_mesh) + " / " + str(total_meshes))
-	print("Mesh vertex count: " + str(current_vertices_start))
+        print("Mesh vertex count: " + str(current_vertices_start))
         context.view_layer.objects.active = o
         o.select_set(True)
         bpy.ops.object.mode_set(mode='EDIT')
@@ -40,10 +40,10 @@ for o in context.selected_objects:
         bpy.ops.mesh.select_all(action = 'DESELECT')
         bpy.ops.object.mode_set(mode='OBJECT')
         o.select_set(False)
-	current_vertices_end = len(o.data.vertices)
-	current_removed_vertices = current_vertices_start - current_vertices_end
-	total_removed_vertices += current_removed_vertices
-	print(str(current_removed_vertices) + " vertices removed.\n")
+        current_vertices_end = len(o.data.vertices)
+        current_removed_vertices = current_vertices_start - current_vertices_end
+        total_removed_vertices += current_removed_vertices
+        print(str(current_removed_vertices) + " vertices removed.\n")
 
 print(str(total_removed_vertices) + " vertices removed.")
 print("Final vertex count: " + str(total_vertices - total_removed_vertices))
