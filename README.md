@@ -1,6 +1,9 @@
 # Assetto Corsa Blender Scripts
 This is just a collection of assorted Blender Python scripts to aid in the track modding process for Assetto Corsa.
 
+# How to Use
+Download or clone this repository and then open the .py scripts inside of Blender's text editor.
+
 ## Alpha_Blend to Opaque
 Sometimes when importing tracks from other games, Blender will change the material blend method to Alpha Blend, causing objects to appear transparent and have an x-ray effect. This script automatically changed the blend method of the selected objects to opaque.
 
