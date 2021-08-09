@@ -11,7 +11,7 @@ Sometimes when importing tracks from other games, Blender will change the materi
 Self-explanatory; deletes all the loose vertices for each selected object.
 
 ## Merge by Distance
-Automatically applies the Merge by Distance operation for each selected object. Threshold can be changed by altering the ```threshold``` variable in the script.
+Automatically applies the Merge by Distance operation for each selected object. Threshold can be changed by altering the ```merge_threshold``` variable in the script.
 
 ## Scale Selected Objects to 1,1,1
 Sets scale of selected objects to (1,1,1). Useful for fixing improperly scaled meshes from FBX imports.
