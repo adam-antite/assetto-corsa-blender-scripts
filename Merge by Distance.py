@@ -44,6 +44,6 @@ if True:
         bm.clear()
     bm.free()
 
-    
+
+print("Final vertex count: " + str(total_vertices - total_removed_vertices))    
 print(str(total_removed_vertices) + " vertices removed.")
-print("Final vertex count: " + str(total_vertices - total_removed_vertices))
